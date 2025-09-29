@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Gizzi - Videomaker Professionista</title>
+    <meta name="description" content="Matteo Gizzi, videomaker professionista specializzato in contenuti social, video corporate, eventi, sport e documentari di viaggio.">
+    <meta name="keywords" content="videomaker, video, montaggio, color grading, Roma, corporate, eventi, documentari, social media">
+    
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="mg-logo.png" alt="MG Logo" class="logo-img">
+                <span class="logo-text">MATTEO GIZZI</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#servizi" class="nav-link">Servizi</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Chi Sono</a></li>
+                <li class="nav-item"><a href="#contatti" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-bg">
+            <div class="video-overlay"></div>
+            <!-- Placeholder per video reel - da sostituire con il tuo video -->
+            <div class="placeholder-video">
+                <i class="fas fa-play-circle"></i>
+                <p>Il tuo video reel andrà qui</p>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-name">Matteo Gizzi</span>
+                <span class="hero-profession">Videomaker</span>
+            </h1>
+            <p class="hero-subtitle">Raccontiamo storie attraverso le immagini</p>
+            <a href="#portfolio" class="cta-button">
+                <span>Scopri i miei lavori</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">I miei ultimi lavori</p>
+            </div>
+            
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="eventi">Eventi</button>
+                <button class="filter-btn" data-filter="sport">Sport</button>
+                <button class="filter-btn" data-filter="viaggi">Viaggi</button>
+                <button class="filter-btn" data-filter="social">Social</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Esempio di video - da replicare per tutti i 20 video -->
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="video-wrapper">
+                        <!-- Placeholder - sostituisci con i tuoi video YouTube -->
+                        <div class="video-placeholder">
+                            <i class="fab fa-youtube"></i>
+                            <p>Video Corporate #1</p>
+                        </div>
+                        <div class="video-overlay">
+                            <h3 class="video-title">Progetto Corporate</h3>
+                            <p class="video-category">Corporate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="eventi">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fab fa-youtube"></i>
+                            <p>Video Evento #1</p>
+                        </div>
+                        <div class="video-overlay">
+                            <h3 class="video-title">Evento Aziendale</h3>
+                            <p class="video-category">Eventi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="sport">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fab fa-youtube"></i>
+                            <p>Video Sport #1</p>
+                        </div>
+                        <div class="video-overlay">
+                            <h3 class="video-title">Competizione Sportiva</h3>
+                            <p class="video-category">Sport</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="viaggi">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fab fa-youtube"></i>
+                            <p>Video Viaggio #1</p>
+                        </div>
+                        <div class="video-overlay">
+                            <h3 class="video-title">Documentario di Viaggio</h3>
+                            <p class="video-category">Viaggi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <i class="fab fa-youtube"></i>
+                            <p>Video Social #1</p>
+                        </div>
+                        <div class="video-overlay">
+                            <h3 class="video-title">Contenuto Social</h3>
+                            <p class="video-category">Social Media</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aggiungi altri 15 video seguendo lo stesso pattern -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servizi" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Servizi</h2>
+                <p class="section-subtitle">Cosa posso fare per te</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title">Riprese Video</h3>
+                    <p class="service-description">Riprese professionali con attrezzature di ultima generazione per ogni tipo di progetto.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-title">Montaggio</h3>
+                    <p class="service-description">Post-produzione completa con software professionali per un risultato cinematografico.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Color Grading</h3>
+                    <p class="service-description">Correzione e gradazione del colore per dare il giusto mood ai tuoi video.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="service-title">Social Media</h3>
+                    <p class="service-description">Contenuti video ottimizzati per tutti i principali social network e piattaforme digitali.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-title">Video Corporate</h3>
+                    <p class="service-description">Video aziendali, presentazioni e comunicazione interna per il tuo business.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="service-title">Eventi</h3>
+                    <p class="service-description">Documentazione completa di eventi, manifestazioni, matrimoni e celebrazioni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>La tua foto professionale andrà qui</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Chi Sono</h2>
+                        <p class="section-subtitle">La mia storia</p>
+                    </div>
+                    <div class="about-description">
+                        <p>Sono Matteo Gizzi, videomaker professionista con sede a Roma. La mia passione per la creazione di contenuti video mi ha portato a lavorare con diverse realtà, dalle aziende alle società sportive, dagli organizzatori di eventi ai privati che desiderano una presenza professionale sui social media.</p>
+                        
+                        <p>Il mio sogno è realizzare documentari e video di viaggio che possano raccontare storie autentiche e coinvolgenti. Mi occupo dell'intero processo creativo: dalle riprese al montaggio, fino al color grading finale.</p>
+                        
+                        <p>Ogni progetto è per me un'opportunità di creare qualcosa di unico, combinando tecnica professionale e visione creativa.</p>
+                    </div>
+                    
+                    <div class="skills">
+                        <h3>Competenze</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Riprese Video</span>
+                            <span class="skill-tag">Montaggio</span>
+                            <span class="skill-tag">Color Grading</span>
+                            <span class="skill-tag">Adobe Premiere</span>
+                            <span class="skill-tag">DaVinci Resolve</span>
+                            <span class="skill-tag">After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contatti" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contattami</h2>
+                <p class="section-subtitle">Parliamo del tuo prossimo progetto</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>matteo@tuodominio.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefono</h3>
+                            <p>+39 XXX XXX XXXX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicazione</h3>
+                            <p>Roma, Lazio</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Il tuo nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="La tua email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Oggetto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Il tuo messaggio" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Invia Messaggio</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="mg-logo.png" alt="MG Logo" class="logo-img">
+                    <span class="logo-text">MATTEO GIZZI</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Matteo Gizzi Videomaker. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
